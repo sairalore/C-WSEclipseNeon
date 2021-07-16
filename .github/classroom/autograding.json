@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Basic Test ",
+      "setup": "gradle build",
+      "run": "gradle run --args=\"hola\"",
+      "input": "",
+      "output": "The 'hola' message in Morse '....---.-...-' has 14 messages with the same number of letters that it could represent",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 5
+    },
+    {
+      "name": "Medium Test",
+      "setup": "gradle build",
+      "run": "gradle run --args=\"prueba\"",
+      "input": "",
+      "output": "The 'prueba' message in Morse '.--..-...-.-....-' has 402 messages with the same number of letters that it could represent",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 10
+    },
+    {
+      "name": "Advance Test",
+      "setup": "gradle build",
+      "run": "gradle run --args=\"verifica\"",
+      "input": "",
+      "output": "The 'verifica' message in Morse '...-..-.....-...-.-..-' has 5942 messages with the same number of letters that it could represent",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 15
+    }
+  ]
+}
